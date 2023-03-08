@@ -15,6 +15,7 @@ import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Container from "@mui/material/Container";
 import { db } from "../../firebase.config";
+import { OAuth } from "../../components";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -122,6 +123,7 @@ const Register = () => {
         </Box>
 
         {/* Google Oauth Component */}
+        <OAuth />
         <Box>
           <Typography variant="body1" mt={2}>
             Already have an account?{" "}

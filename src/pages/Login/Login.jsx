@@ -9,6 +9,7 @@ import TextField from "@mui/material/TextField";
 import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { OAuth } from "../../components";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -93,6 +94,7 @@ const Login = () => {
         </Box>
 
         {/* Google Oauth Component */}
+        <OAuth />
         <Box>
           <Typography variant="body1" mt={2}>
             Do not have an account?{" "}
